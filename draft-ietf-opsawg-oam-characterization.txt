@@ -6,9 +6,9 @@ OPS Area Working Group                                      C. Pignataro
 Internet-Draft                                      Blue Fern Consulting
 Updates: 6291 (if approved)                                    A. Farrel
 Intended status: Best Current Practice                Old Dog Consulting
-Expires: 12 March 2026                                        T. Mizrahi
+Expires: 13 March 2026                                        T. Mizrahi
                                                                   Huawei
-                                                        8 September 2025
+                                                        9 September 2025
 
 
                   Guidelines for Characterizing "OAM"
@@ -31,10 +31,6 @@ Abstract
    abbreviation and lays out guidelines for their use in future IETF
    work.
 
-   This document updates RFC 6291 by adding to the guidelines for the
-   use of the term "OAM".  It does not modify any other part of RFC
-   6291.
-
 Status of This Memo
 
    This Internet-Draft is submitted in full conformance with the
@@ -50,15 +46,17 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
+   This Internet-Draft will expire on 13 March 2026.
 
 
 
-Pignataro, et al.         Expires 12 March 2026                 [Page 1]
+
+
+
+Pignataro, et al.         Expires 13 March 2026                 [Page 1]
 
 Internet-Draft             Characterizing OAM             September 2025
 
-
-   This Internet-Draft will expire on 12 March 2026.
 
 Copyright Notice
 
@@ -109,7 +107,9 @@ Table of Contents
 
 
 
-Pignataro, et al.         Expires 12 March 2026                 [Page 2]
+
+
+Pignataro, et al.         Expires 13 March 2026                 [Page 2]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -165,7 +165,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 12 March 2026                 [Page 3]
+Pignataro, et al.         Expires 13 March 2026                 [Page 3]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -187,11 +187,12 @@ Internet-Draft             Characterizing OAM             September 2025
    the terms of [RFC7799].
 
    Active OAM:
-      Depends on dedicated OAM packets.
+      Uses dedicated OAM packets.
 
    Passive OAM:
-      Depends solely on the observation of one or more existing data
-      packet streams and does not use dedicated OAM packets.
+      Relies on the observation of one or more existing data packet
+      streams and does not use dedicated OAM packets and does not modify
+      data packets.
 
    Hybrid OAM:
       Uses a combination of Active Methods and Passive Methods, which
@@ -202,7 +203,9 @@ Internet-Draft             Characterizing OAM             September 2025
 
    This document defines the term In-Data-Packet OAM as a more specific
    and narrowly scoped instance within the broader category of Hybrid
-   OAM.
+   OAM.  This new term allows for a more fine-grained classification of
+   OAM mechanisms, as the broad category of Hybrid OAM includes a
+   diverse set of possible OAM methods.
 
    In-Data-Packet OAM:
       OAM-related information is carried in the packets that also carry
@@ -216,15 +219,15 @@ Internet-Draft             Characterizing OAM             September 2025
       "Active OAM", since they are described as "An MPLS echo request/
       reply is a (possibly MPLS-labeled) IPv4 or IPv6 UDP packet".
 
-   *  Monitoring a packet stream by maintaining counters for the packets
-      within the stream is an example of "Passive OAM".
 
 
-
-Pignataro, et al.         Expires 12 March 2026                 [Page 4]
+Pignataro, et al.         Expires 13 March 2026                 [Page 4]
 
 Internet-Draft             Characterizing OAM             September 2025
 
+
+   *  Monitoring a packet stream by maintaining counters for the packets
+      within the stream is an example of "Passive OAM".
 
    *  An example of "Hybrid OAM" that is also "In-Data-Packet OAM", is
       an IOAM [RFC9197] trace option that is incorporated into data
@@ -274,10 +277,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-
-
-
-Pignataro, et al.         Expires 12 March 2026                 [Page 5]
+Pignataro, et al.         Expires 13 March 2026                 [Page 5]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -333,7 +333,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 12 March 2026                 [Page 6]
+Pignataro, et al.         Expires 13 March 2026                 [Page 6]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -389,7 +389,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 12 March 2026                 [Page 7]
+Pignataro, et al.         Expires 13 March 2026                 [Page 7]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -445,7 +445,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 12 March 2026                 [Page 8]
+Pignataro, et al.         Expires 13 March 2026                 [Page 8]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -501,7 +501,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 12 March 2026                 [Page 9]
+Pignataro, et al.         Expires 13 March 2026                 [Page 9]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -557,7 +557,7 @@ Appendix A.  Examples of the Use of the Term In-Band
 
 
 
-Pignataro, et al.         Expires 12 March 2026                [Page 10]
+Pignataro, et al.         Expires 13 March 2026                [Page 10]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -613,4 +613,4 @@ Authors' Addresses
 
 
 
-Pignataro, et al.         Expires 12 March 2026                [Page 11]
+Pignataro, et al.         Expires 13 March 2026                [Page 11]

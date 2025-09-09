@@ -111,10 +111,6 @@
       prepended, within the context of packet networks, to the OAM
       abbreviation and lays out guidelines for their use in future IETF
       work.</t>
-
-      <t>This document updates RFC 6291 by adding to the guidelines for the
-      use of the term "OAM". It does not modify any other part of RFC
-      6291.</t>
     </abstract>
   </front>
 
@@ -198,12 +194,12 @@
         document does not update or change the terms of 
         <xref target="RFC7799"/>. 
           <list style="hanging">
-            <t hangText="Active OAM:"><br/> Depends on dedicated OAM
+            <t hangText="Active OAM:"><br/> Uses dedicated OAM
             packets.</t>
 
-            <t hangText="Passive OAM:"><br/> Depends solely on the observation
+            <t hangText="Passive OAM:"><br/> Relies on the observation
             of one or more existing data packet streams and does not use
-            dedicated OAM packets.</t>
+            dedicated OAM packets and does not modify data packets.</t>
 
             <t hangText="Hybrid OAM:"><br/> Uses a combination of Active 
             Methods and Passive Methods, which may include augmentation or 
@@ -215,7 +211,9 @@
 
         <t>This document defines the term In-Data-Packet OAM as a more specific and
         narrowly scoped instance within the broader category of Hybrid
-        OAM.</t>
+        OAM. This new term allows for a more fine-grained classification of OAM 
+        mechanisms, as the broad category of Hybrid OAM includes a diverse set of 
+        possible OAM methods.</t>
 
         <t>
           <list style="hanging">
