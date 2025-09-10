@@ -6,9 +6,9 @@ OPS Area Working Group                                      C. Pignataro
 Internet-Draft                                      Blue Fern Consulting
 Updates: 6291 (if approved)                                    A. Farrel
 Intended status: Best Current Practice                Old Dog Consulting
-Expires: 13 March 2026                                        T. Mizrahi
+Expires: 14 March 2026                                        T. Mizrahi
                                                                   Huawei
-                                                        9 September 2025
+                                                       10 September 2025
 
 
                   Guidelines for Characterizing "OAM"
@@ -46,14 +46,14 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 13 March 2026.
+   This Internet-Draft will expire on 14 March 2026.
 
 
 
 
 
 
-Pignataro, et al.         Expires 13 March 2026                 [Page 1]
+Pignataro, et al.         Expires 14 March 2026                 [Page 1]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -77,7 +77,7 @@ Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
    2.  In-Band and Out-of-Band OAM . . . . . . . . . . . . . . . . .   3
    3.  Terminology and Guidance  . . . . . . . . . . . . . . . . . .   3
-     3.1.  Active, Passive, Hybrid, and In-Data-Packet OAM . . . . .   4
+     3.1.  Active, Passive, and Hybrid OAM . . . . . . . . . . . . .   4
      3.2.  Path Followed OAM . . . . . . . . . . . . . . . . . . . .   5
      3.3.  Packet Forwarding Treatment OAM . . . . . . . . . . . . .   6
      3.4.  Using Multiple Criteria . . . . . . . . . . . . . . . . .   6
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Pignataro, et al.         Expires 13 March 2026                 [Page 2]
+Pignataro, et al.         Expires 14 March 2026                 [Page 2]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -165,7 +165,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 13 March 2026                 [Page 3]
+Pignataro, et al.         Expires 14 March 2026                 [Page 3]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -175,7 +175,7 @@ Internet-Draft             Characterizing OAM             September 2025
    mode; whether it follows the same path as data traffic; and whether
    it receives the same treatment as data traffic.
 
-3.1.  Active, Passive, Hybrid, and In-Data-Packet OAM
+3.1.  Active, Passive, and Hybrid OAM
 
    [RFC7799] provides clear definitions for active and passive
    performance assessment, enabling the construction of metrics and
@@ -221,7 +221,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 13 March 2026                 [Page 4]
+Pignataro, et al.         Expires 14 March 2026                 [Page 4]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -277,7 +277,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 13 March 2026                 [Page 5]
+Pignataro, et al.         Expires 14 March 2026                 [Page 5]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -333,7 +333,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 13 March 2026                 [Page 6]
+Pignataro, et al.         Expires 14 March 2026                 [Page 6]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -389,7 +389,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 13 March 2026                 [Page 7]
+Pignataro, et al.         Expires 14 March 2026                 [Page 7]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -417,8 +417,9 @@ Internet-Draft             Characterizing OAM             September 2025
    Richardson, Stewart Bryant, Greg Mirsky, Med Boucadair, Loa
    Andersson, Thomas Graf, Alex Huang Feng, Xiao Min, Dhruv Dhody, Henk
    Birkholz, Alex Huang Feng, Tom Petch, Roni Even, Tim Chown, Marcus
-   Ihlar, Med Boucadair, and Benoit Claise for their thorough review and
-   useful feedback comments that greatly improved this document.
+   Ihlar, Med Boucadair, Benoit Claise, Thomas Graf and Chongfeng Xie
+   for their thorough review and useful feedback comments that greatly
+   improved this document.
 
 7.  References
 
@@ -439,17 +440,19 @@ Internet-Draft             Characterizing OAM             September 2025
               <https://datatracker.ietf.org/doc/html/draft-ietf-raw-
               architecture-30>.
 
-   [I-D.kumar-ippm-ifa]
-              Kumar, J., Anubolu, S., Lemon, J., Manur, R., Holbrook,
-              H., Ghanwani, A., Cai, D., Ou, H., Li, Y., and X. Wang,
 
 
 
-Pignataro, et al.         Expires 13 March 2026                 [Page 8]
+
+
+Pignataro, et al.         Expires 14 March 2026                 [Page 8]
 
 Internet-Draft             Characterizing OAM             September 2025
 
 
+   [I-D.kumar-ippm-ifa]
+              Kumar, J., Anubolu, S., Lemon, J., Manur, R., Holbrook,
+              H., Ghanwani, A., Cai, D., Ou, H., Li, Y., and X. Wang,
               "Inband Flow Analyzer", Work in Progress, Internet-Draft,
               draft-kumar-ippm-ifa-08, 26 April 2024,
               <https://datatracker.ietf.org/doc/html/draft-kumar-ippm-
@@ -494,17 +497,18 @@ Internet-Draft             Characterizing OAM             September 2025
               DOI 10.17487/RFC7276, June 2014,
               <https://www.rfc-editor.org/info/rfc7276>.
 
-   [RFC7799]  Morton, A., "Active and Passive Metrics and Methods (with
-              Hybrid Types In-Between)", RFC 7799, DOI 10.17487/RFC7799,
-              May 2016, <https://www.rfc-editor.org/info/rfc7799>.
 
 
 
 
-Pignataro, et al.         Expires 13 March 2026                 [Page 9]
+Pignataro, et al.         Expires 14 March 2026                 [Page 9]
 
 Internet-Draft             Characterizing OAM             September 2025
 
+
+   [RFC7799]  Morton, A., "Active and Passive Metrics and Methods (with
+              Hybrid Types In-Between)", RFC 7799, DOI 10.17487/RFC7799,
+              May 2016, <https://www.rfc-editor.org/info/rfc7799>.
 
    [RFC8029]  Kompella, K., Swallow, G., Pignataro, C., Ed., Kumar, N.,
               Aldrin, S., and M. Chen, "Detecting Multiprotocol Label
@@ -548,19 +552,22 @@ Appendix A.  Examples of the Use of the Term In-Band
    [I-D.kumar-ippm-ifa], still use variations of "in-band", "in band",
    or "inband".
 
+
+
+
+
+
+Pignataro, et al.         Expires 14 March 2026                [Page 10]
+
+Internet-Draft             Characterizing OAM             September 2025
+
+
    Path-Congruent OAM was sometimes referred to as "in-band".  As
    described in [RFC5085], "The VCCV message travels in-band with the
    Session and follows the exact same path as the user data for the
    session".  The term "in-band" is also used in Section 2 of [RFC6669]
    with the same meaning.  Non-Path-Congruent OAM was referred to in
    [RFC5085] as Out-of-Band.
-
-
-
-Pignataro, et al.         Expires 13 March 2026                [Page 10]
-
-Internet-Draft             Characterizing OAM             September 2025
-
 
    The property of "Equal-Forwarding-Treatment" is referred to in
    [RFC9551] as "In-band OAM".  Similarly, the property of "Different-
@@ -606,11 +613,4 @@ Authors' Addresses
 
 
 
-
-
-
-
-
-
-
-Pignataro, et al.         Expires 13 March 2026                [Page 11]
+Pignataro, et al.         Expires 14 March 2026                [Page 11]

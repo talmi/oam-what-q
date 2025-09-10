@@ -183,7 +183,7 @@
       mode; whether it follows the same path as data traffic; and whether it 
       receives the same treatment as data traffic.</t>
 
-      <section title="Active, Passive, Hybrid, and In-Data-Packet OAM">
+      <section title="Active, Passive, and Hybrid OAM">
         <t><xref target="RFC7799"/> provides clear definitions for active and
         passive performance assessment, enabling the construction of metrics
         and methods to be described as either "Active" or "Passive". Even
@@ -432,7 +432,7 @@
       Richardson, Stewart Bryant, Greg Mirsky, Med Boucadair, Loa Andersson,
       Thomas Graf, Alex Huang Feng, Xiao Min, Dhruv Dhody, Henk Birkholz, Alex
       Huang Feng, Tom Petch, Roni Even, Tim Chown, Marcus Ihlar, Med
-      Boucadair, and Benoit Claise for their thorough review and useful
+      Boucadair, Benoit Claise, Thomas Graf and Chongfeng Xie for their thorough review and useful
       feedback comments that greatly improved this document.</t>
     </section>
   </middle>
