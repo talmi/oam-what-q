@@ -23,9 +23,12 @@
       prepended, within the context of packet networks, to the OAM
       abbreviation and lays out guidelines for their use in future IETF
       work. 
+       This document updates   by adding to the
+      guidelines for the use of the term "OAM". It does not modify any other
+      part of  . 
     ' name="description">
 <meta content="xml2rfc 3.30.2" name="generator">
-<meta content="draft-ietf-opsawg-oam-characterization-11" name="ietf.draft">
+<meta content="draft-ietf-opsawg-oam-characterization-12" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.30.2
     Python 3.12.3
@@ -1235,7 +1238,7 @@ li > p:last-of-type:only-child {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Pignataro, et al.</td>
-<td class="center">Expires 14 March 2026</td>
+<td class="center">Expires 15 March 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1245,18 +1248,18 @@ li > p:last-of-type:only-child {
 <dt class="label-workgroup">Workgroup:</dt>
 <dd class="workgroup">OPS Area Working Group</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
-<dd class="internet-draft">draft-ietf-opsawg-oam-characterization-11</dd>
+<dd class="internet-draft">draft-ietf-opsawg-oam-characterization-12</dd>
 <dt class="label-updates">Updates:</dt>
 <dd class="updates">
 <a href="https://www.rfc-editor.org/rfc/rfc6291" class="eref">6291</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-09-10" class="published">10 September 2025</time>
+<time datetime="2025-09-11" class="published">11 September 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Best Current Practice</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2026-03-14">14 March 2026</time></dd>
+<dd class="expires"><time datetime="2026-03-15">15 March 2026</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1291,6 +1294,9 @@ li > p:last-of-type:only-child {
       prepended, within the context of packet networks, to the OAM
       abbreviation and lays out guidelines for their use in future IETF
       work.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
+<p id="section-abstract-3">This document updates <span>[<a href="#RFC6291" class="cite xref">RFC6291</a>]</span> by adding to the
+      guidelines for the use of the term "OAM". It does not modify any other
+      part of <span>[<a href="#RFC6291" class="cite xref">RFC6291</a>]</span>.<a href="#section-abstract-3" class="pilcrow">¶</a></p>
 </section>
 <div id="status-of-memo">
 <section id="section-boilerplate.1">
@@ -1311,7 +1317,7 @@ li > p:last-of-type:only-child {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 14 March 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 15 March 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1408,9 +1414,6 @@ li > p:last-of-type:only-child {
       some common qualifiers and modifiers that are prepended to the OAM
       abbreviation, and lays out guidelines for their use in future IETF work
       to achieve consistent and unambiguous characterization.<a href="#section-1-2" class="pilcrow">¶</a></p>
-<p id="section-1-3">This document updates <span>[<a href="#RFC6291" class="cite xref">RFC6291</a>]</span> by adding to the
-      guidelines for the use of the term "OAM". It does not modify any other
-      part of <span>[<a href="#RFC6291" class="cite xref">RFC6291</a>]</span>.<a href="#section-1-3" class="pilcrow">¶</a></p>
 </section>
 <div id="band">
 <section id="section-2">
@@ -1529,7 +1532,7 @@ li > p:last-of-type:only-child {
 </li>
           <li class="normal" id="section-3.1-6.3">
             <p id="section-3.1-6.3.1">An example of "Hybrid OAM" that is also "In-Data-Packet OAM", is 
-           an IOAM <span>[<a href="#RFC9197" class="cite xref">RFC9197</a>]</span> trace option that is incorporated
+           an IOAM (In Situ OAM) <span>[<a href="#RFC9197" class="cite xref">RFC9197</a>]</span> trace option that is incorporated
            into data packets. According to <span>[<a href="#RFC9197" class="cite xref">RFC9197</a>]</span>, IOAM
            '...records OAM information within the packet while the packet 
            traverses a particular network domain. The term "in situ" refers 
@@ -1653,7 +1656,7 @@ li > p:last-of-type:only-child {
             and does not generate dedicated OAM packets. As such, the
             path congruence and forwarding treatment criteria are not 
             relevant, since no dedicated OAM packets are exchanged between the
-            measurment points.<a href="#section-3.4-4.1.1" class="pilcrow">¶</a></p>
+            measurement points.<a href="#section-3.4-4.1.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-3.4-4.2">
             <p id="section-3.4-4.2.1">Non-Path-Congruent OAM, by nature, cannot be
@@ -1731,7 +1734,7 @@ li > p:last-of-type:only-child {
       Richardson, Stewart Bryant, Greg Mirsky, Med Boucadair, Loa Andersson,
       Thomas Graf, Alex Huang Feng, Xiao Min, Dhruv Dhody, Henk Birkholz, Alex
       Huang Feng, Tom Petch, Roni Even, Tim Chown, Marcus Ihlar, Med
-      Boucadair, Benoit Claise, Thomas Graf and Chongfeng Xie for their thorough review and useful
+      Boucadair, Benoit Claise, and Chongfeng Xie for their thorough review and useful
       feedback comments that greatly improved this document.<a href="#section-6-2" class="pilcrow">¶</a></p>
 </section>
 <section id="section-7">
@@ -1824,7 +1827,7 @@ li > p:last-of-type:only-child {
       </h2>
 <p id="appendix-A-1">This appendix provides a few examples of the use of the term "in-band". 
       These are intended to highlight the varying interpretations of the term 
-      across different contexts.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
+      across different contexts, which led to the guidelines in this document.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
 <p id="appendix-A-2">In-Data-Packet OAM was in some cases referred to as "in-band".
       Initially, "In situ OAM" <span>[<a href="#RFC9197" class="cite xref">RFC9197</a>]</span> was also referred
       to as "In-band OAM", but was renamed due to the overloaded meaning of

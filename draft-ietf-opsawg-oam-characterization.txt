@@ -6,13 +6,13 @@ OPS Area Working Group                                      C. Pignataro
 Internet-Draft                                      Blue Fern Consulting
 Updates: 6291 (if approved)                                    A. Farrel
 Intended status: Best Current Practice                Old Dog Consulting
-Expires: 14 March 2026                                        T. Mizrahi
+Expires: 15 March 2026                                        T. Mizrahi
                                                                   Huawei
-                                                       10 September 2025
+                                                       11 September 2025
 
 
                   Guidelines for Characterizing "OAM"
-               draft-ietf-opsawg-oam-characterization-11
+               draft-ietf-opsawg-oam-characterization-12
 
 Abstract
 
@@ -31,6 +31,10 @@ Abstract
    abbreviation and lays out guidelines for their use in future IETF
    work.
 
+   This document updates [RFC6291] by adding to the guidelines for the
+   use of the term "OAM".  It does not modify any other part of
+   [RFC6291].
+
 Status of This Memo
 
    This Internet-Draft is submitted in full conformance with the
@@ -46,17 +50,15 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 14 March 2026.
 
 
 
-
-
-
-Pignataro, et al.         Expires 14 March 2026                 [Page 1]
+Pignataro, et al.         Expires 15 March 2026                 [Page 1]
 
 Internet-Draft             Characterizing OAM             September 2025
 
+
+   This Internet-Draft will expire on 15 March 2026.
 
 Copyright Notice
 
@@ -107,16 +109,10 @@ Table of Contents
 
 
 
-
-
-Pignataro, et al.         Expires 14 March 2026                 [Page 2]
+Pignataro, et al.         Expires 15 March 2026                 [Page 2]
 
 Internet-Draft             Characterizing OAM             September 2025
 
-
-   This document updates [RFC6291] by adding to the guidelines for the
-   use of the term "OAM".  It does not modify any other part of
-   [RFC6291].
 
 2.  In-Band and Out-of-Band OAM
 
@@ -165,7 +161,11 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 14 March 2026                 [Page 3]
+
+
+
+
+Pignataro, et al.         Expires 15 March 2026                 [Page 3]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -221,7 +221,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 14 March 2026                 [Page 4]
+Pignataro, et al.         Expires 15 March 2026                 [Page 4]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -230,12 +230,12 @@ Internet-Draft             Characterizing OAM             September 2025
       within the stream is an example of "Passive OAM".
 
    *  An example of "Hybrid OAM" that is also "In-Data-Packet OAM", is
-      an IOAM [RFC9197] trace option that is incorporated into data
-      packets.  According to [RFC9197], IOAM '...records OAM information
-      within the packet while the packet traverses a particular network
-      domain.  The term "in situ" refers to the fact that the OAM data
-      is added to the data packets rather than being sent within packets
-      specifically dedicated to OAM.'
+      an IOAM (In Situ OAM) [RFC9197] trace option that is incorporated
+      into data packets.  According to [RFC9197], IOAM '...records OAM
+      information within the packet while the packet traverses a
+      particular network domain.  The term "in situ" refers to the fact
+      that the OAM data is added to the data packets rather than being
+      sent within packets specifically dedicated to OAM.'
 
    *  Another example of "Hybrid OAM" that is also "In-Data-Packet OAM"
       is Alternate Marking [RFC9341], when applied to data packets.  In
@@ -277,7 +277,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 14 March 2026                 [Page 5]
+Pignataro, et al.         Expires 15 March 2026                 [Page 5]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -333,7 +333,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 14 March 2026                 [Page 6]
+Pignataro, et al.         Expires 15 March 2026                 [Page 6]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -345,7 +345,7 @@ Internet-Draft             Characterizing OAM             September 2025
       does not generate dedicated OAM packets.  As such, the path
       congruence and forwarding treatment criteria are not relevant,
       since no dedicated OAM packets are exchanged between the
-      measurment points.
+      measurement points.
 
    *  Non-Path-Congruent OAM, by nature, cannot be Equal-Forwarding-
       Treatment.
@@ -389,7 +389,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 14 March 2026                 [Page 7]
+Pignataro, et al.         Expires 15 March 2026                 [Page 7]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -417,9 +417,9 @@ Internet-Draft             Characterizing OAM             September 2025
    Richardson, Stewart Bryant, Greg Mirsky, Med Boucadair, Loa
    Andersson, Thomas Graf, Alex Huang Feng, Xiao Min, Dhruv Dhody, Henk
    Birkholz, Alex Huang Feng, Tom Petch, Roni Even, Tim Chown, Marcus
-   Ihlar, Med Boucadair, Benoit Claise, Thomas Graf and Chongfeng Xie
-   for their thorough review and useful feedback comments that greatly
-   improved this document.
+   Ihlar, Med Boucadair, Benoit Claise, and Chongfeng Xie for their
+   thorough review and useful feedback comments that greatly improved
+   this document.
 
 7.  References
 
@@ -445,7 +445,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 14 March 2026                 [Page 8]
+Pignataro, et al.         Expires 15 March 2026                 [Page 8]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -501,7 +501,7 @@ Internet-Draft             Characterizing OAM             September 2025
 
 
 
-Pignataro, et al.         Expires 14 March 2026                 [Page 9]
+Pignataro, et al.         Expires 15 March 2026                 [Page 9]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -541,7 +541,8 @@ Appendix A.  Examples of the Use of the Term In-Band
 
    This appendix provides a few examples of the use of the term "in-
    band".  These are intended to highlight the varying interpretations
-   of the term across different contexts.
+   of the term across different contexts, which led to the guidelines in
+   this document.
 
    In-Data-Packet OAM was in some cases referred to as "in-band".
    Initially, "In situ OAM" [RFC9197] was also referred to as "In-band
@@ -556,8 +557,7 @@ Appendix A.  Examples of the Use of the Term In-Band
 
 
 
-
-Pignataro, et al.         Expires 14 March 2026                [Page 10]
+Pignataro, et al.         Expires 15 March 2026                [Page 10]
 
 Internet-Draft             Characterizing OAM             September 2025
 
@@ -613,4 +613,4 @@ Authors' Addresses
 
 
 
-Pignataro, et al.         Expires 14 March 2026                [Page 11]
+Pignataro, et al.         Expires 15 March 2026                [Page 11]

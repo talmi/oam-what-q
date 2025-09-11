@@ -24,7 +24,7 @@
 <?rfc subcompact="no" ?>
 <?rfc symrefs="yes"?>
 <rfc category="bcp" consensus="true"
-     docName="draft-ietf-opsawg-oam-characterization-11" ipr="trust200902"
+     docName="draft-ietf-opsawg-oam-characterization-12" ipr="trust200902"
      submissionType="IETF" updates="6291">
   <?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
 
@@ -111,6 +111,10 @@
       prepended, within the context of packet networks, to the OAM
       abbreviation and lays out guidelines for their use in future IETF
       work.</t>
+
+      <t>This document updates <xref target="RFC6291"/> by adding to the
+      guidelines for the use of the term "OAM". It does not modify any other
+      part of <xref target="RFC6291"/>.</t>
     </abstract>
   </front>
 
@@ -128,10 +132,6 @@
       some common qualifiers and modifiers that are prepended to the OAM
       abbreviation, and lays out guidelines for their use in future IETF work
       to achieve consistent and unambiguous characterization.</t>
-
-      <t>This document updates <xref target="RFC6291"/> by adding to the
-      guidelines for the use of the term "OAM". It does not modify any other
-      part of <xref target="RFC6291"/>.</t>
     </section>
 
     <section anchor="band" title="In-Band and Out-of-Band OAM">
@@ -238,7 +238,7 @@
             packets within the stream is an example of "Passive OAM".</t>
 
            <t>An example of "Hybrid OAM" that is also "In-Data-Packet OAM", is 
-           an IOAM <xref target="RFC9197"/> trace option that is incorporated
+           an IOAM (In Situ OAM) <xref target="RFC9197"/> trace option that is incorporated
            into data packets. According to <xref target="RFC9197"/>, IOAM
            '...records OAM information within the packet while the packet 
            traverses a particular network domain. The term "in situ" refers 
@@ -359,7 +359,7 @@
             and does not generate dedicated OAM packets. As such, the
             path congruence and forwarding treatment criteria are not 
             relevant, since no dedicated OAM packets are exchanged between the
-            measurment points.</t>
+            measurement points.</t>
 
             <t>Non-Path-Congruent OAM, by nature, cannot be
             Equal-Forwarding-Treatment.</t>
@@ -432,7 +432,7 @@
       Richardson, Stewart Bryant, Greg Mirsky, Med Boucadair, Loa Andersson,
       Thomas Graf, Alex Huang Feng, Xiao Min, Dhruv Dhody, Henk Birkholz, Alex
       Huang Feng, Tom Petch, Roni Even, Tim Chown, Marcus Ihlar, Med
-      Boucadair, Benoit Claise, Thomas Graf and Chongfeng Xie for their thorough review and useful
+      Boucadair, Benoit Claise, and Chongfeng Xie for their thorough review and useful
       feedback comments that greatly improved this document.</t>
     </section>
   </middle>
@@ -488,7 +488,7 @@
     <section anchor="appendix" title="Examples of the Use of the Term In-Band">
       <t>This appendix provides a few examples of the use of the term "in-band". 
       These are intended to highlight the varying interpretations of the term 
-      across different contexts.</t>
+      across different contexts, which led to the guidelines in this document.</t>
 
       <t>In-Data-Packet OAM was in some cases referred to as "in-band".
       Initially, "In situ OAM" <xref target="RFC9197"/> was also referred
