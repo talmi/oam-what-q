@@ -24,7 +24,7 @@
 <?rfc subcompact="no" ?>
 <?rfc symrefs="yes"?>
 <rfc category="bcp" consensus="true"
-     docName="draft-ietf-opsawg-oam-characterization-12" ipr="trust200902"
+     docName="draft-ietf-opsawg-oam-characterization-13" ipr="trust200902"
      submissionType="IETF" updates="6291">
   <?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
 
@@ -162,10 +162,10 @@
       target="RFC9551"/>. While the context in each of these documents is 
       clear, the term carries different meanings in each case. These two 
       examples, as well as other examples of uses of the term "in-band" in 
-      previous documents are described throughout <xref target="terms"/>.</t>
+      other documents are described in <xref target="appendix"/>.</t>
 
       <t>While interpreting existing documents, it is important to understand
-      the semantics of what "band" is a proxy for, and to be more explicit if
+      the semantics of what the term "band" refers to, and to be more explicit if
       those documents are updated. This document does not change the meaning
       of any terms in any prior RFCs.</t>
     </section>
@@ -224,6 +224,11 @@
           </list>
         </t>
 
+        <t>When In-Data-Packet OAM is applied to a single stream of interest 
+        it is a specific case of Hybrid Type I, whereas when applied to two or 
+        more streams that are observed with some degree of coordination it is a 
+        specific case of Hybrid Type II.</t>
+
         <t>The following examples illustrate the terms Active, Passive, 
         Hybrid, and In-Data-Packet OAM:</t>
 
@@ -237,31 +242,34 @@
             <t>Monitoring a packet stream by maintaining counters for the 
             packets within the stream is an example of "Passive OAM".</t>
 
-           <t>An example of "Hybrid OAM" that is also "In-Data-Packet OAM", is 
+           <t>An example of "Hybrid Type I OAM" that is also "In-Data-Packet OAM", is 
            an IOAM (In Situ OAM) <xref target="RFC9197"/> trace option that is incorporated
-           into data packets. According to <xref target="RFC9197"/>, IOAM
+           into data packets of a single stream of interest. According to <xref target="RFC9197"/>, IOAM
            '...records OAM information within the packet while the packet 
            traverses a particular network domain. The term "in situ" refers 
            to the fact that the OAM data is added to the data packets rather 
            than being sent within packets specifically dedicated to OAM.'</t>
 
-           <t>Another example of "Hybrid OAM" that is also "In-Data-Packet 
+           <t>Another example of "Hybrid Type I OAM" that is also "In-Data-Packet 
            OAM" is Alternate Marking <xref target="RFC9341"/>, when applied to
-           data packets. In this case a small number of bits in the packet 
+           data packets of a single stream. In this case a small number of bits in the packet 
            header is used for marking a subset of packets in a flow.</t>
 
-           <t>An example of "Hybrid OAM" which is not classified as "In-Data-Packet
-           OAM" is Direct loss measurement <xref target="RFC6374"/>,            
+           <t>An example of "Hybrid Type I OAM" which is not classified as "In-Data-Packet
+           OAM" is Direct Loss Measurement <xref target="RFC6374"/>,            
            in which user packets are not modified by the protocol. Instead, 
            OAM packets are used for carrying information about observed 
            network characteristics, namely user packet counter values, 
            allowing for packet loss computation.</t>
 
-           <t>Another example of "Hybrid OAM" which is not "In-Data-Packet OAM"
+           <t>Another example of "Hybrid Type I OAM" which is not "In-Data-Packet OAM"
            is the case where a packet stream is (actively) generated while 
            an existing stream of interest is (passively) observed. This
-           example was introduced in <xref target="RFC7799"/> as a Hybrid 
-           method.</t>
+           example was introduced in <xref target="RFC7799"/> as a Hybrid Type I
+           method. Extending this example, if the packets of the active stream include 
+           an IOAM trace option, the method is characterized by the more general term, 
+           Hybrid Type I.</t>
+
           </list>
         </t>
 
@@ -342,9 +350,9 @@
         all criteria are applicable to all OAM protocols, and not all
         combinations are necessarily possible.</t> 
 
-        <t>When defining a new OAM protocol or analyzing an existing one, it
+        <t>When defining a new OAM mechanism or analyzing an existing one, it
         is recommended to explicitly consider which of these criteria are
-        applicable and to describe the protocol accordingly. As a first step,
+        applicable and to describe the mechanism accordingly. As a first step,
         all OAM mechanisms can be classified according to the first criterion,
         as Active, Passive, or Hybrid/In-Data-Packet. Further classification
         according to the other two criteria should be considered on a 
@@ -386,13 +394,13 @@
             classified as Active, Path-Congruent and
             Different-Forwarding-Treatment.</t>
 
-            <t>MPLS inferred loss measurement <xref target="RFC6374"/> uses
+            <t>MPLS Inferred Loss Measurement <xref target="RFC6374"/> uses
             specially generated test messages, and therefore can be classified
             as Active. It is also Path-Congruent, and can be deployed either
-            as Equal- or Different-Forwarding-Treatment OAM. MPLS direct loss
-            measurement <xref target="RFC6374"/> uses OAM messages that
-            exchange counters that count user data traffic. Hence, it is
-            classified as Hybrid OAM, and as in the inferred mode, it is
+            as Equal- or Different-Forwarding-Treatment OAM. MPLS Direct Loss
+            Measurement <xref target="RFC6374"/> uses OAM messages that
+            carry counters that count user data traffic. Hence, it is
+            classified as Hybrid Type I OAM, and as in the Inferred Loss Measurement, it is
             Path-Congruent, and can be either Equal- or
             Different-Forwarding-Treatment OAM.</t>
           </list>
