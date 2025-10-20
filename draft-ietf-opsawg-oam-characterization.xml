@@ -24,7 +24,7 @@
 <?rfc subcompact="no" ?>
 <?rfc symrefs="yes"?>
 <rfc category="bcp" consensus="true"
-     docName="draft-ietf-opsawg-oam-characterization-10" ipr="trust200902"
+     docName="draft-ietf-opsawg-oam-characterization-13" ipr="trust200902"
      submissionType="IETF" updates="6291">
   <?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
 
@@ -103,16 +103,18 @@
       understood, the same qualifier may be interpreted differently in
       different contexts. A case in point is the qualifiers "in-band" and
       "out-of-band" which have their origins in the radio lexicon, and which
-      have been extrapolated into other communication networks.</t>
+      have been extrapolated into other communication networks.
+      This document recommends not to use these two terms when referring to 
+      OAM.</t>
 
       <t>This document considers some common qualifiers and modifiers that are
       prepended, within the context of packet networks, to the OAM
       abbreviation and lays out guidelines for their use in future IETF
       work.</t>
 
-      <t>This document updates RFC 6291 by adding to the guidelines for the
-      use of the term "OAM". It does not modify any other part of RFC
-      6291.</t>
+      <t>This document updates <xref target="RFC6291"/> by adding to the
+      guidelines for the use of the term "OAM". It does not modify any other
+      part of <xref target="RFC6291"/>.</t>
     </abstract>
   </front>
 
@@ -130,10 +132,6 @@
       some common qualifiers and modifiers that are prepended to the OAM
       abbreviation, and lays out guidelines for their use in future IETF work
       to achieve consistent and unambiguous characterization.</t>
-
-      <t>This document updates <xref target="RFC6291"/> by adding to the
-      guidelines for the use of the term "OAM". It does not modify any other
-      part of <xref target="RFC6291"/>.</t>
     </section>
 
     <section anchor="band" title="In-Band and Out-of-Band OAM">
@@ -164,10 +162,10 @@
       target="RFC9551"/>. While the context in each of these documents is 
       clear, the term carries different meanings in each case. These two 
       examples, as well as other examples of uses of the term "in-band" in 
-      previous documents are described throughout <xref target="terms"/>.</t>
+      other documents are described in <xref target="appendix"/>.</t>
 
       <t>While interpreting existing documents, it is important to understand
-      the semantics of what "band" is a proxy for, and to be more explicit if
+      the semantics of what the term "band" refers to, and to be more explicit if
       those documents are updated. This document does not change the meaning
       of any terms in any prior RFCs.</t>
     </section>
@@ -185,7 +183,7 @@
       mode; whether it follows the same path as data traffic; and whether it 
       receives the same treatment as data traffic.</t>
 
-      <section title="Active, Passive, Hybrid, and In-Data-Packet OAM">
+      <section title="Active, Passive, and Hybrid OAM">
         <t><xref target="RFC7799"/> provides clear definitions for active and
         passive performance assessment, enabling the construction of metrics
         and methods to be described as either "Active" or "Passive". Even
@@ -196,31 +194,38 @@
         document does not update or change the terms of 
         <xref target="RFC7799"/>. 
           <list style="hanging">
-            <t hangText="Active OAM:"><br/> Depends on dedicated OAM
+            <t hangText="Active OAM:"><br/> Uses dedicated OAM
             packets.</t>
 
-            <t hangText="Passive OAM:"><br/> Depends solely on the observation
+            <t hangText="Passive OAM:"><br/> Relies on the observation
             of one or more existing data packet streams and does not use
-            dedicated OAM packets.</t>
+            dedicated OAM packets and does not modify data packets.</t>
 
-            <t hangText="Hybrid OAM:"><br/> Uses augmentation or modification
-            of the packet stream. <xref target="RFC7799"/> makes a distinction
-            between Hybrid Type I, referring to a single stream of interest,
-            and Hybrid Type II, referring to two or more streams of interest.</t> 
+            <t hangText="Hybrid OAM:"><br/> Uses a combination of Active 
+            Methods and Passive Methods, which may include augmentation or 
+            modification of the stream of interest. <xref target="RFC7799"/> 
+            makes a distinction between Hybrid Type I, referring to a single 
+            stream of interest, and Hybrid Type II, referring to two or more 
+            streams of interest.</t> 
           </list></t>
 
         <t>This document defines the term In-Data-Packet OAM as a more specific and
         narrowly scoped instance within the broader category of Hybrid
-        OAM.</t>
+        OAM. This new term allows for a more fine-grained classification of OAM 
+        mechanisms, as the broad category of Hybrid OAM includes a diverse set of 
+        possible OAM methods.</t>
 
         <t>
           <list style="hanging">
-            <t hangText="In-Data-Packet OAM:"><br/>The OAM information is carried
+            <t hangText="In-Data-Packet OAM:"><br/>OAM-related information is carried
             in the packets that also carry the data traffic. This is a 
             specific case of Hybrid OAM. It was sometimes referred to as 
             "in-band".</t>
           </list>
         </t>
+
+        <t>Note that In-Data-Packet OAM is a specific case of Hybrid Type I,
+        as it is applied to a single stream of interest.</t> 
 
         <t>The following examples illustrate the terms Active, Passive, 
         Hybrid, and In-Data-Packet OAM:</t>
@@ -235,30 +240,34 @@
             <t>Monitoring a packet stream by maintaining counters for the 
             packets within the stream is an example of "Passive OAM".</t>
 
-           <t>An example of "Hybrid OAM" that is also "In-Data-Packet OAM", is 
-           an IOAM <xref target="RFC9197"/> trace option that is incorporated
-           into data packets. According to <xref target="RFC9197"/>, IOAM
+           <t>An example of "Hybrid Type I OAM" that is also "In-Data-Packet OAM", is 
+           an IOAM (In Situ OAM) <xref target="RFC9197"/> trace option that is incorporated
+           into data packets of a single stream of interest. According to <xref target="RFC9197"/>, IOAM
            '...records OAM information within the packet while the packet 
            traverses a particular network domain. The term "in situ" refers 
            to the fact that the OAM data is added to the data packets rather 
            than being sent within packets specifically dedicated to OAM.'</t>
 
-           <t>Another example of "Hybrid OAM" that is also "In-Data-Packet 
+           <t>Another example of "Hybrid Type I OAM" that is also "In-Data-Packet 
            OAM" is Alternate Marking <xref target="RFC9341"/>, when applied to
-           data packets. In this case a small number of bits in the packet 
+           data packets of a single stream. In this case a small number of bits in the packet 
            header is used for marking a subset of packets in a flow.</t>
 
-           <t>An example of "Hybrid OAM" which is not classified as "In-Data-Packet
-           OAM" is Direct loss measurement <xref target="RFC6374"/>,            
-           in which user packets are not modified by the protocol. Instead,
-           OAM packets are used to exchange information about user packet
-           counters, allowing for packet loss computation.</t>
+           <t>An example of "Hybrid Type I OAM" which is not classified as "In-Data-Packet
+           OAM" is Direct Loss Measurement <xref target="RFC6374"/>,            
+           in which user packets are not modified by the protocol. Instead, 
+           OAM packets are used for carrying information about observed 
+           network characteristics, namely user packet counter values, 
+           allowing for packet loss computation.</t>
 
-           <t>Another example of "Hybrid OAM" which is not "In-Data-Packet OAM"
+           <t>Another example of "Hybrid Type I OAM" which is not "In-Data-Packet OAM"
            is the case where a packet stream is (actively) generated while 
            an existing stream of interest is (passively) observed. This
-           example was introduced in <xref target="RFC7799"/> as a Hybrid 
-           method.</t>
+           example was introduced in <xref target="RFC7799"/> as a Hybrid Type I
+           method. Extending this example, if the packets of the active stream include 
+           an IOAM trace option, the method is characterized by the more general term, 
+           Hybrid Type I.</t>
+
           </list>
         </t>
 
@@ -276,8 +285,8 @@
             the exact same path as the observed data traffic.</t>
 
             <t hangText="Non-Path-Congruent OAM:"><br/>The OAM information
-            does not follow the exact same path as the observed data traffic.
-            This can also be called Path-Incongruent OAM.</t>
+            is not guaranteed to follow the exact same path as the observed 
+            data traffic. This can also be called Path-Incongruent OAM.</t>
           </list>
         </t>
 
@@ -285,9 +294,7 @@
         packets that follow the exact same path (i.e., traverse the same nodes
         and links) within a network. Note that this definition does not
         describe how the packets are treated in queues within the nodes on the
-        path. A further concept, "equal-forwarding-treatment" describes how
-        path-congruent packets receive the same forwarding treatment (e.g.,
-        Quality of Service (QoS)).</t>
+        path.</t>
 
         <t>An example of "Path-Congruent OAM" is the Virtual Circuit
         Connectivity Verification (VCCV) Type 1 <xref target="RFC5085"/>,
@@ -304,8 +311,8 @@
             packets.</t>
 
             <t hangText="Different-Forwarding-Treatment OAM:"><br/>The OAM
-            packets receive different forwarding (e.g., QoS) treatment as user
-            data packets.</t>
+            packets might receive different forwarding (e.g., QoS) treatment 
+            than user data packets.</t>
           </list>
         </t>
 
@@ -341,9 +348,9 @@
         all criteria are applicable to all OAM protocols, and not all
         combinations are necessarily possible.</t> 
 
-        <t>When defining a new OAM protocol or analyzing an existing one, it
+        <t>When defining a new OAM mechanism or analyzing an existing one, it
         is recommended to explicitly consider which of these criteria are
-        applicable and to describe the protocol accordingly. As a first step,
+        applicable and to describe the mechanism accordingly. As a first step,
         all OAM mechanisms can be classified according to the first criterion,
         as Active, Passive, or Hybrid/In-Data-Packet. Further classification
         according to the other two criteria should be considered on a 
@@ -358,7 +365,7 @@
             and does not generate dedicated OAM packets. As such, the
             path congruence and forwarding treatment criteria are not 
             relevant, since no dedicated OAM packets are exchanged between the
-            measurment points.</t>
+            measurement points.</t>
 
             <t>Non-Path-Congruent OAM, by nature, cannot be
             Equal-Forwarding-Treatment.</t>
@@ -385,13 +392,13 @@
             classified as Active, Path-Congruent and
             Different-Forwarding-Treatment.</t>
 
-            <t>MPLS inferred loss measurement <xref target="RFC6374"/> uses
+            <t>MPLS Inferred Loss Measurement <xref target="RFC6374"/> uses
             specially generated test messages, and therefore can be classified
             as Active. It is also Path-Congruent, and can be deployed either
-            as Equal- or Different-Forwarding-Treatment OAM. MPLS direct loss
-            measurement <xref target="RFC6374"/> uses OAM messages that
-            exchange counters that count user data traffic. Hence, it is
-            classified as Hybrid OAM, and as in the inferred mode, it is
+            as Equal- or Different-Forwarding-Treatment OAM. MPLS Direct Loss
+            Measurement <xref target="RFC6374"/> uses OAM messages that
+            carry counters that count user data traffic. Hence, it is
+            classified as Hybrid Type I OAM, and as in the Inferred Loss Measurement, it is
             Path-Congruent, and can be either Equal- or
             Different-Forwarding-Treatment OAM.</t>
           </list>
@@ -431,7 +438,7 @@
       Richardson, Stewart Bryant, Greg Mirsky, Med Boucadair, Loa Andersson,
       Thomas Graf, Alex Huang Feng, Xiao Min, Dhruv Dhody, Henk Birkholz, Alex
       Huang Feng, Tom Petch, Roni Even, Tim Chown, Marcus Ihlar, Med
-      Boucadair, and Benoit Claise for their thorough review and useful
+      Boucadair, Benoit Claise, and Chongfeng Xie for their thorough review and useful
       feedback comments that greatly improved this document.</t>
     </section>
   </middle>
@@ -485,10 +492,9 @@
     </references>
 
     <section anchor="appendix" title="Examples of the Use of the Term In-Band">
-      <t>While several instances of the term "in-band" were discussed 
-      throughout the document, this appendix provides additional examples. 
+      <t>This appendix provides a few examples of the use of the term "in-band". 
       These are intended to highlight the varying interpretations of the term 
-      across different contexts.</t>
+      across different contexts, which led to the guidelines in this document.</t>
 
       <t>In-Data-Packet OAM was in some cases referred to as "in-band".
       Initially, "In situ OAM" <xref target="RFC9197"/> was also referred
