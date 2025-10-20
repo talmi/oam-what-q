@@ -224,10 +224,8 @@
           </list>
         </t>
 
-        <t>When In-Data-Packet OAM is applied to a single stream of interest 
-        it is a specific case of Hybrid Type I, whereas when applied to two or 
-        more streams that are observed with some degree of coordination it is a 
-        specific case of Hybrid Type II.</t>
+        <t>Note that In-Data-Packet OAM is a specific case of Hybrid Type I,
+        as it is applied to a single stream of interest.</t> 
 
         <t>The following examples illustrate the terms Active, Passive, 
         Hybrid, and In-Data-Packet OAM:</t>
