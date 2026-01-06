@@ -25,7 +25,7 @@
 <?rfc subcompact="no" ?>
 <?rfc symrefs="yes"?>
 <rfc category="bcp" consensus="true"
-     docName="draft-ietf-opsawg-oam-characterization-14" ipr="trust200902"
+     docName="draft-ietf-opsawg-oam-characterization-15" ipr="trust200902"
      submissionType="IETF" updates="6291">
   <?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
 
@@ -291,7 +291,7 @@
 
             <t hangText="Non-Path-Congruent OAM:"><br/>The OAM information
             is not guaranteed to follow the exact same forwarding path as the observed 
-            data traffic. This can also be called Path-Incongruent OAM.</t>
+            data traffic.</t>
           </list>
         </t>
 
@@ -445,7 +445,7 @@
 
             <t hangText="Non-Path-Congruent OAM:"><br/>The OAM information
             is not guaranteed to follow the exact same forwarding path as the observed 
-            data traffic. This can also be called Path-Incongruent OAM.</t>
+            data traffic.</t>
 
             <t hangText="Equal-Forwarding-Treatment OAM:"><br/>The OAM packets
             receive the same forwarding (e.g., QoS) treatment as user data
@@ -482,7 +482,8 @@
       Richardson, Stewart Bryant, Greg Mirsky, Med Boucadair, Loa Andersson,
       Thomas Graf, Alex Huang Feng, Xiao Min, Dhruv Dhody, Henk Birkholz, Alex
       Huang Feng, Tom Petch, Roni Even, Tim Chown, Marcus Ihlar, Med
-      Boucadair, Benoit Claise, and Chongfeng Xie for their thorough review and useful
+      Boucadair, Benoit Claise, Chongfeng Xie, Robert Sparks, Kyle Rose, and Mach Chen 
+      for their thorough review and useful
       feedback comments that greatly improved this document.</t>
     </section>
   </middle>
