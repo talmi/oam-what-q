@@ -28,7 +28,7 @@
       part of RFC6291. 
     ' name="description">
 <meta content="xml2rfc 3.31.0" name="generator">
-<meta content="draft-ietf-opsawg-oam-characterization-15" name="ietf.draft">
+<meta content="draft-ietf-opsawg-oam-characterization-16" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.31.0
     Python 3.12.3
@@ -1237,7 +1237,7 @@ li > p:last-of-type:only-child {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Pignataro, et al.</td>
-<td class="center">Expires 10 July 2026</td>
+<td class="center">Expires 29 July 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1247,18 +1247,18 @@ li > p:last-of-type:only-child {
 <dt class="label-workgroup">Workgroup:</dt>
 <dd class="workgroup">OPS Area Working Group</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
-<dd class="internet-draft">draft-ietf-opsawg-oam-characterization-15</dd>
+<dd class="internet-draft">draft-ietf-opsawg-oam-characterization-16</dd>
 <dt class="label-updates">Updates:</dt>
 <dd class="updates">
 <a href="https://www.rfc-editor.org/rfc/rfc6291" class="eref">6291</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2026-01-06" class="published">6 January 2026</time>
+<time datetime="2026-01-25" class="published">25 January 2026</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Best Current Practice</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2026-07-10">10 July 2026</time></dd>
+<dd class="expires"><time datetime="2026-07-29">29 July 2026</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1316,7 +1316,7 @@ li > p:last-of-type:only-child {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 10 July 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 29 July 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1372,6 +1372,9 @@ li > p:last-of-type:only-child {
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.6">
                 <p id="section-toc.1-1.3.2.6.1"><a href="#section-3.6" class="auto internal xref">3.6</a>.  <a href="#name-summary-of-terms" class="internal xref">Summary of Terms</a></p>
 </li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.7">
+                <p id="section-toc.1-1.3.2.7.1"><a href="#section-3.7" class="auto internal xref">3.7</a>.  <a href="#name-applicability-and-conforman" class="internal xref">Applicability and Conformance Statement</a></p>
+</li>
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
@@ -1419,6 +1422,8 @@ li > p:last-of-type:only-child {
       some common qualifiers and modifiers that are prepended to the OAM
       abbreviation, and lays out guidelines for their use in future IETF work
       to achieve consistent and unambiguous characterization (<a href="#terms" class="auto internal xref">Section 3</a>).
+      In the context of this document, the term "OAM" refers to the OAM 
+      protocol toolset as defined in Section 2.2.3. of <span>[<a href="#RFC7276" class="cite xref">RFC7276</a>]</span>.
       While this document introduces new terminology, it is does not update or change
       the meaning of terminology found in existing RFCs.<a href="#section-1-2" class="pilcrow">¶</a></p>
 </section>
@@ -1461,6 +1466,7 @@ li > p:last-of-type:only-child {
       <h2 id="name-terminology-and-guidance">
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-terminology-and-guidance" class="section-name selfRef">Terminology and Guidance</a>
       </h2>
+<div id="RecSec">
 <section id="section-3.1">
         <h3 id="name-recommendation">
 <a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-recommendation" class="section-name selfRef">Recommendation</a>
@@ -1469,13 +1475,15 @@ li > p:last-of-type:only-child {
       "out-of-band" when referring to OAM. Instead, it encourages the use of
       more fine-grained and descriptive terminology. The document also
       presents alternative terms and definitions for use in future IETF
-      documents referencing OAM, without precluding the use of other precise,
+      documents that discuss OAM (including a reference to this document), 
+      without precluding the use of other precise,
       descriptive terms that do not rely on the "-band" convention.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
 <p id="section-3.1-2">The terminology presented in this section classifies OAM according to
       three criteria: whether it operates in an active, passive, or hybrid 
       mode (<a href="#ActivePassiveSec" class="auto internal xref">Section 3.2</a>); whether it follows the same path as data traffic (<a href="#PathFollowed" class="auto internal xref">Section 3.3</a>); and whether it 
       receives the same treatment as data traffic (<a href="#PktForwarding" class="auto internal xref">Section 3.4</a>).<a href="#section-3.1-2" class="pilcrow">¶</a></p>
 </section>
+</div>
 <div id="ActivePassiveSec">
 <section id="section-3.2">
         <h3 id="name-active-passive-and-hybrid-o">
@@ -1715,12 +1723,12 @@ li > p:last-of-type:only-child {
             Different-Forwarding-Treatment OAM.<a href="#section-3.5-5.4.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
-<p id="section-3.5-6">In measurement protocols, accurate results depend on path 
-        congruence and equal forwarding treatment. In contrast, these 
+<p id="section-3.5-6">In measurement protocols, accurate results depend on Path- 
+        Congruence and Equal-Forwarding-Treatment. In contrast, these 
         properties are not always required in other OAM protocols. For 
         example, Bidirectional Forwarding Detection (BFD) <span>[<a href="#RFC5880" class="cite xref">RFC5880</a>]</span> control packets  
         are often sent with the highest priority, which means they do 
-        not adhere to the equal forwarding treatment property.<a href="#section-3.5-6" class="pilcrow">¶</a></p>
+        not adhere to the Equal-Forwarding-Treatment property.<a href="#section-3.5-6" class="pilcrow">¶</a></p>
 <p id="section-3.5-7">This multi-dimensional classification enables a more precise and
         consistent understanding of OAM mechanisms.<a href="#section-3.5-7" class="pilcrow">¶</a></p>
 </section>
@@ -1790,6 +1798,28 @@ li > p:last-of-type:only-child {
         <dd class="break"></dd>
 </dl>
 </section>
+<section id="section-3.7">
+        <h3 id="name-applicability-and-conforman">
+<a href="#section-3.7" class="section-number selfRef">3.7. </a><a href="#name-applicability-and-conforman" class="section-name selfRef">Applicability and Conformance Statement</a>
+        </h3>
+<p id="section-3.7-1">The definitions here SHOULD be used by IETF documents referencing OAM. IETF
+   documents that explicitly want to create different definitions for
+   the terms defined here can do so, but unless an alternate definition
+   is provided the definitions of the terms in this document apply.
+   IETF documents that have a requirement for different definitions are
+   encouraged, for clarity's sake, to find terms different than the ones
+   defined here. See also <a href="#RecSec" class="auto internal xref">Section 3.1</a>.<a href="#section-3.7-1" class="pilcrow">¶</a></p>
+<p id="section-3.7-2">Authors who follow the terms as defined in this document SHOULD incorporate
+   the following in the document (typically in the terminology section):<a href="#section-3.7-2" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-3.7-3">
+<pre>
+&lt;TEMPLATE TEXT BEGINS&gt;
+   OAM terms [INSERT TERMS] are to be interpreted as described in
+   [RFC-Editor:Please replace with reference to this document].
+&lt;TEMPLATE TEXT ENDS&gt;
+</pre><a href="#section-3.7-3" class="pilcrow">¶</a>
+</div>
+</section>
 </section>
 </div>
 <section id="section-4">
@@ -1820,7 +1850,9 @@ li > p:last-of-type:only-child {
       Richardson, Stewart Bryant, Greg Mirsky, Med Boucadair, Loa Andersson,
       Thomas Graf, Alex Huang Feng, Xiao Min, Dhruv Dhody, Henk Birkholz, Alex
       Huang Feng, Tom Petch, Roni Even, Tim Chown, Marcus Ihlar, Med
-      Boucadair, Benoit Claise, Chongfeng Xie, Robert Sparks, Kyle Rose, and Mach Chen 
+      Boucadair, Benoit Claise, Chongfeng Xie, Robert Sparks, Kyle Rose, Mach Chen,
+      Roman Danyliw, Gorry Fairhurst, Eric Vyncke, Andy Newton, Deb Cooley, Ketan Talaulikar,
+      and Gunter Van de Velde 
       for their thorough review and useful
       feedback comments that greatly improved this document.<a href="#section-6-2" class="pilcrow">¶</a></p>
 </section>
