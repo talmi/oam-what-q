@@ -110,12 +110,12 @@
 
       <t>This document considers some common qualifiers and modifiers that are
       prepended, within the context of packet networks, to the OAM
-      abbreviation and lays out guidelines for their use in future IETF
-      work.</t>
+      abbreviation and lays out guidelines for their use in IETF
+      documents.</t>
 
-      <t>This document updates RFC6291 by adding to the
+      <t>This document updates RFC 6291 by adding to the
       guidelines for the use of the term "OAM". It does not modify any other
-      part of RFC6291.</t>
+      part of RFC 6291.</t>
     </abstract>
   </front>
 
@@ -132,10 +132,13 @@
       adjective phrases "in-band" and "out-of-band" (<xref target="band"/>). This document considers
       some common qualifiers and modifiers that are prepended to the OAM
       abbreviation, and lays out guidelines for their use in future IETF work
-      to achieve consistent and unambiguous characterization (<xref target="terms"/>).
-      In the context of this document, the term "OAM" refers to the OAM 
-      protocol toolset as defined in Section 2.2.3. of <xref target="RFC7276"/>.
-      While this document introduces new terminology, it is does not update or change
+      to achieve consistent and unambiguous characterization (<xref target="terms"/>).</t>
+
+     <t>This document focuses on "OAM" qualifiers; not the definition of "OAM" per se.
+      Readers should refer to <xref target="RFC6291"/> for an overview of OAM scope. This document does not extend or restrict that scope.
+      Also, readers may refer to the OAM protocol toolset defined in Section 2.2.3. of <xref target="RFC7276"/>.</t>
+
+     <t>While this document introduces new terminology, it is does not update or change
       the meaning of terminology found in existing RFCs.</t>
     </section>
 
@@ -173,6 +176,8 @@
       the semantics of what the term "band" refers to, and to be more explicit if
       those documents are updated. This document does not change the meaning
       of any terms in any prior RFCs.</t>
+
+      <t>The applicability of the guidance in <xref target="RecSec"/> is provided in <xref target="Sec-Applicability"/>.</t>
     </section>
 
     <section anchor="terms" title="Terminology and Guidance">
@@ -408,8 +413,8 @@
           </list>
         </t>
 
-        <t>In measurement protocols, accurate results depend on Path- 
-        Congruence and Equal-Forwarding-Treatment. In contrast, these 
+        <t>In measurement protocols, accurate results depend on 
+        Path-Congruence and Equal-Forwarding-Treatment. In contrast, these 
         properties are not always required in other OAM protocols. For 
         example, Bidirectional Forwarding Detection (BFD) <xref target="RFC5880"/> control packets  
         are often sent with the highest priority, which means they do 
@@ -462,7 +467,7 @@
       </section>
 
 
-      <section title="Applicability and Conformance Statement">
+      <section anchor="Sec-Applicability" title="Applicability and Conformance Statement">
    <t>The definitions here SHOULD be used by IETF documents referencing OAM. IETF
    documents that explicitly want to create different definitions for
    the terms defined here can do so, but unless an alternate definition
@@ -475,10 +480,10 @@
    the following in the document (typically in the terminology section):</t>
 
         <artwork align="left"><![CDATA[
-<TEMPLATE TEXT BEGINS>
+<BEGIN TEMPLATE TEXT>
    OAM terms [INSERT TERMS] are to be interpreted as described in 
    [RFC-Editor:Please replace with reference to this document].
-<TEMPLATE TEXT ENDS>
+<END TEMPLATE TEXT>
            ]]></artwork>
       </section>
 
