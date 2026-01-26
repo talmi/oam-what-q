@@ -6,9 +6,9 @@ OPS Area Working Group                                      C. Pignataro
 Internet-Draft                                      Blue Fern Consulting
 Updates: 6291 (if approved)                                    A. Farrel
 Intended status: Best Current Practice                Old Dog Consulting
-Expires: 29 July 2026                                         T. Mizrahi
+Expires: 30 July 2026                                         T. Mizrahi
                                                                   Huawei
-                                                         25 January 2026
+                                                         26 January 2026
 
 
                   Guidelines for Characterizing "OAM"
@@ -28,11 +28,11 @@ Abstract
 
    This document considers some common qualifiers and modifiers that are
    prepended, within the context of packet networks, to the OAM
-   abbreviation and lays out guidelines for their use in future IETF
-   work.
+   abbreviation and lays out guidelines for their use in IETF documents.
 
-   This document updates RFC6291 by adding to the guidelines for the use
-   of the term "OAM".  It does not modify any other part of RFC6291.
+   This document updates RFC 6291 by adding to the guidelines for the
+   use of the term "OAM" with qualifiers.  It does not modify any other
+   part of RFC 6291.
 
 Status of This Memo
 
@@ -49,11 +49,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 29 July 2026.
+   This Internet-Draft will expire on 30 July 2026.
 
 
 
-Pignataro, et al.         Expires 29 July 2026                  [Page 1]
+Pignataro, et al.         Expires 30 July 2026                  [Page 1]
 
 Internet-Draft             Characterizing OAM               January 2026
 
@@ -76,7 +76,7 @@ Table of Contents
 
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
    2.  In-Band and Out-of-Band OAM . . . . . . . . . . . . . . . . .   3
-   3.  Terminology and Guidance  . . . . . . . . . . . . . . . . . .   3
+   3.  Terminology and Guidance  . . . . . . . . . . . . . . . . . .   4
      3.1.  Recommendation  . . . . . . . . . . . . . . . . . . . . .   4
      3.2.  Active, Passive, and Hybrid OAM . . . . . . . . . . . . .   4
      3.3.  Path Followed OAM . . . . . . . . . . . . . . . . . . . .   6
@@ -84,14 +84,14 @@ Table of Contents
      3.5.  Using Multiple Criteria . . . . . . . . . . . . . . . . .   7
      3.6.  Summary of Terms  . . . . . . . . . . . . . . . . . . . .   8
      3.7.  Applicability and Conformance Statement . . . . . . . . .   9
-   4.  Security Considerations . . . . . . . . . . . . . . . . . . .   9
-   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   9
-   6.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   9
+   4.  Security Considerations . . . . . . . . . . . . . . . . . . .  10
+   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  10
+   6.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .  10
    7.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  10
      7.1.  Normative References  . . . . . . . . . . . . . . . . . .  10
      7.2.  Informative References  . . . . . . . . . . . . . . . . .  10
    Appendix A.  Examples of the Use of the Term In-Band  . . . . . .  12
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  12
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  13
 
 1.  Introduction
 
@@ -101,25 +101,35 @@ Table of Contents
    Maintenance, "OAM", and [RFC6291] provides guidelines for its use as
    well as definitions of its constituent parts.
 
+
+
+
+
+
+
+
+
+Pignataro, et al.         Expires 30 July 2026                  [Page 2]
+
+Internet-Draft             Characterizing OAM               January 2026
+
+
    Characterizations or qualifiers for "OAM" within packet networks
    often encounter similar problems of interpretation, such as with the
    adjective phrases "in-band" and "out-of-band" (Section 2).  This
    document considers some common qualifiers and modifiers that are
    prepended to the OAM abbreviation, and lays out guidelines for their
-
-
-
-Pignataro, et al.         Expires 29 July 2026                  [Page 2]
-
-Internet-Draft             Characterizing OAM               January 2026
-
-
    use in future IETF work to achieve consistent and unambiguous
-   characterization (Section 3).  In the context of this document, the
-   term "OAM" refers to the OAM protocol toolset as defined in
-   Section 2.2.3. of [RFC7276].  While this document introduces new
-   terminology, it is does not update or change the meaning of
-   terminology found in existing RFCs.
+   characterization (Section 3).
+
+   This document focuses on "OAM" qualifiers; not the definition of
+   "OAM" per se.  Readers should refer to [RFC6291] for an overview of
+   OAM scope.  This document does not extend or restrict that scope.
+   Also, readers may refer to the OAM protocol toolset defined in
+   Section 2.2.3. of [RFC7276].
+
+   While this document introduces new terminology, it is does not update
+   or change the meaning of terminology found in existing RFCs.
 
 2.  In-Band and Out-of-Band OAM
 
@@ -153,22 +163,22 @@ Internet-Draft             Characterizing OAM               January 2026
    someone exposed to them for the first time, since there is no "band"
    in IP.
 
+
+
+Pignataro, et al.         Expires 30 July 2026                  [Page 3]
+
+Internet-Draft             Characterizing OAM               January 2026
+
+
    While interpreting existing documents, it is important to understand
    the semantics of what the term "band" refers to, and to be more
    explicit if those documents are updated.  This document does not
    change the meaning of any terms in any prior RFCs.
 
+   The applicability of the guidance in Section 3.1 is provided in
+   Section 3.7.
+
 3.  Terminology and Guidance
-
-
-
-
-
-
-Pignataro, et al.         Expires 29 July 2026                  [Page 3]
-
-Internet-Draft             Characterizing OAM               January 2026
-
 
 3.1.  Recommendation
 
@@ -206,6 +216,16 @@ Internet-Draft             Characterizing OAM               January 2026
       data packets.
 
    Hybrid OAM:
+
+
+
+
+
+Pignataro, et al.         Expires 30 July 2026                  [Page 4]
+
+Internet-Draft             Characterizing OAM               January 2026
+
+
       Uses a combination of Active Methods and Passive Methods, which
       may include augmentation or modification of the stream of
       interest.  [RFC7799] makes a distinction between Hybrid Type I,
@@ -217,14 +237,6 @@ Internet-Draft             Characterizing OAM               January 2026
    OAM.  This new term allows for a more fine-grained classification of
    OAM mechanisms, as the broad category of Hybrid OAM includes a
    diverse set of possible OAM methods.
-
-
-
-
-Pignataro, et al.         Expires 29 July 2026                  [Page 4]
-
-Internet-Draft             Characterizing OAM               January 2026
-
 
    In-Data-Packet OAM:
       OAM-related information is carried in the packets that also carry
@@ -262,6 +274,14 @@ Internet-Draft             Characterizing OAM               January 2026
    *  An example of "Hybrid Type I OAM" which is not classified as "In-
       Data-Packet OAM" is Direct Loss Measurement [RFC6374], in which
       user packets are not modified by the protocol.  Instead, OAM
+
+
+
+Pignataro, et al.         Expires 30 July 2026                  [Page 5]
+
+Internet-Draft             Characterizing OAM               January 2026
+
+
       packets are used for carrying information about observed network
       characteristics, namely user packet counter values, allowing for
       packet loss computation.
@@ -273,14 +293,6 @@ Internet-Draft             Characterizing OAM               January 2026
       Type I method.  Extending this example, if the packets of the
       active stream include an IOAM trace option, the method is
       characterized by the more general term, Hybrid Type I.
-
-
-
-
-Pignataro, et al.         Expires 29 July 2026                  [Page 5]
-
-Internet-Draft             Characterizing OAM               January 2026
-
 
 3.3.  Path Followed OAM
 
@@ -318,6 +330,14 @@ Internet-Draft             Characterizing OAM               January 2026
    the user data they are intended to monitor.  This includes not only
    traversing the same topological path but also receiving identical
    Quality of Service (QoS) treatment, such as queuing, scheduling, and
+
+
+
+Pignataro, et al.         Expires 30 July 2026                  [Page 6]
+
+Internet-Draft             Characterizing OAM               January 2026
+
+
    traffic shaping.  When both topological and forwarding treatment
    equivalence are achieved, the OAM packets are said to exhibit fate-
    sharing [RFC7276] with the data traffic.  Fate-sharing ensures that
@@ -328,15 +348,6 @@ Internet-Draft             Characterizing OAM               January 2026
    could lead to misleading measurements or diagnostics, and even
    inadequate corrective actions, reducing the utility of the OAM
    mechanism for performance monitoring, fault detection and mitigation.
-
-
-
-
-
-Pignataro, et al.         Expires 29 July 2026                  [Page 6]
-
-Internet-Draft             Characterizing OAM               January 2026
-
 
    An example of "Equal-Forwarding-Treatment OAM" is presented in
    [RFC9551] in the context of Deterministic Networking (DetNet) OAM:
@@ -371,6 +382,18 @@ Internet-Draft             Characterizing OAM               January 2026
    A few examples of OAM classification according to the three criteria
    are presented below:
 
+
+
+
+
+
+
+
+Pignataro, et al.         Expires 30 July 2026                  [Page 7]
+
+Internet-Draft             Characterizing OAM               January 2026
+
+
    *  IP Ping, which uses ICMP Echo messages, can be classified as
       Active OAM.  Since it is not guaranteed to follow the same path or
       receive the same treatment as user data packets, it is classified
@@ -384,16 +407,6 @@ Internet-Draft             Characterizing OAM               January 2026
    *  VCCV [RFC5085], as discussed above, is classified as Active, Path-
       Congruent, and Different-Forwarding-Treatment.
 
-
-
-
-
-
-Pignataro, et al.         Expires 29 July 2026                  [Page 7]
-
-Internet-Draft             Characterizing OAM               January 2026
-
-
    *  MPLS Inferred Loss Measurement (ILM) (Section 3 of [RFC6374]) uses
       specially generated test messages, and therefore can be classified
       as Active.  It is also Path-Congruent, and can be deployed either
@@ -404,7 +417,7 @@ Internet-Draft             Characterizing OAM               January 2026
       Measurement, it is Path-Congruent, and can be either Equal- or
       Different-Forwarding-Treatment OAM.
 
-   In measurement protocols, accurate results depend on Path- Congruence
+   In measurement protocols, accurate results depend on Path-Congruence
    and Equal-Forwarding-Treatment.  In contrast, these properties are
    not always required in other OAM protocols.  For example,
    Bidirectional Forwarding Detection (BFD) [RFC5880] control packets
@@ -427,6 +440,16 @@ Internet-Draft             Characterizing OAM               January 2026
       data packets.
 
    Hybrid OAM:
+
+
+
+
+
+Pignataro, et al.         Expires 30 July 2026                  [Page 8]
+
+Internet-Draft             Characterizing OAM               January 2026
+
+
       Uses a combination of Active Methods and Passive Methods, which
       may include augmentation or modification of the stream of
       interest.  [RFC7799] makes a distinction between Hybrid Type I,
@@ -441,14 +464,6 @@ Internet-Draft             Characterizing OAM               January 2026
    Path-Congruent OAM:
       The OAM information follows the exact same forwarding path as the
       observed data traffic.
-
-
-
-
-Pignataro, et al.         Expires 29 July 2026                  [Page 8]
-
-Internet-Draft             Characterizing OAM               January 2026
-
 
    Non-Path-Congruent OAM:
       The OAM information is not guaranteed to follow the exact same
@@ -476,10 +491,20 @@ Internet-Draft             Characterizing OAM               January 2026
    incorporate the following in the document (typically in the
    terminology section):
 
-   <TEMPLATE TEXT BEGINS>
+   <BEGIN TEMPLATE TEXT>
       OAM terms [INSERT TERMS] are to be interpreted as described in
       [RFC-Editor:Please replace with reference to this document].
-   <TEMPLATE TEXT ENDS>
+   <END TEMPLATE TEXT>
+
+
+
+
+
+
+Pignataro, et al.         Expires 30 July 2026                  [Page 9]
+
+Internet-Draft             Characterizing OAM               January 2026
+
 
 4.  Security Considerations
 
@@ -498,14 +523,6 @@ Internet-Draft             Characterizing OAM               January 2026
    alphabetically: Adrian Farrel, Alexander Vainshtein, Florian Kauer,
    Frank Brockners, Greg Mirsky, Italo Busi, Loa Andersson, Med
    Boucadair, Michael Richardson, Quan Xiong, Stewart Bryant, Tom Petch,
-
-
-
-Pignataro, et al.         Expires 29 July 2026                  [Page 9]
-
-Internet-Draft             Characterizing OAM               January 2026
-
-
    Eduard Vasilenko, and Xiao Min.
 
    The authors wish to thank, chronologically, Hesham Elbakoury, Michael
@@ -537,6 +554,14 @@ Internet-Draft             Characterizing OAM               January 2026
    [I-D.ietf-raw-architecture]
               Thubert, P., "Reliable and Available Wireless
               Architecture", Work in Progress, Internet-Draft, draft-
+
+
+
+Pignataro, et al.         Expires 30 July 2026                 [Page 10]
+
+Internet-Draft             Characterizing OAM               January 2026
+
+
               ietf-raw-architecture-30, 25 July 2025,
               <https://datatracker.ietf.org/doc/html/draft-ietf-raw-
               architecture-30>.
@@ -550,17 +575,6 @@ Internet-Draft             Characterizing OAM               January 2026
               Digits, Telephony Tones, and Telephony Signals", RFC 4733,
               DOI 10.17487/RFC4733, December 2006,
               <https://www.rfc-editor.org/info/rfc4733>.
-
-
-
-
-
-
-
-Pignataro, et al.         Expires 29 July 2026                 [Page 10]
-
-Internet-Draft             Characterizing OAM               January 2026
-
 
    [RFC5085]  Nadeau, T., Ed. and C. Pignataro, Ed., "Pseudowire Virtual
               Circuit Connectivity Verification (VCCV): A Control
@@ -593,6 +607,17 @@ Internet-Draft             Characterizing OAM               January 2026
               DOI 10.17487/RFC8029, March 2017,
               <https://www.rfc-editor.org/info/rfc8029>.
 
+
+
+
+
+
+
+Pignataro, et al.         Expires 30 July 2026                 [Page 11]
+
+Internet-Draft             Characterizing OAM               January 2026
+
+
    [RFC9197]  Brockners, F., Ed., Bhandari, S., Ed., and T. Mizrahi,
               Ed., "Data Fields for In Situ Operations, Administration,
               and Maintenance (IOAM)", RFC 9197, DOI 10.17487/RFC9197,
@@ -607,16 +632,6 @@ Internet-Draft             Characterizing OAM               January 2026
               and T. Zhou, "Alternate-Marking Method", RFC 9341,
               DOI 10.17487/RFC9341, December 2022,
               <https://www.rfc-editor.org/info/rfc9341>.
-
-
-
-
-
-
-Pignataro, et al.         Expires 29 July 2026                 [Page 11]
-
-Internet-Draft             Characterizing OAM               January 2026
-
 
    [RFC9551]  Mirsky, G., Theoleyre, F., Papadopoulos, G., Bernardos,
               CJ., Varga, B., and J. Farkas, "Framework of Operations,
@@ -645,6 +660,20 @@ Appendix A.  Examples of the Use of the Term In-Band
    with the same meaning.  Non-Path-Congruent OAM was referred to in
    [RFC5085] as Out-of-Band.
 
+
+
+
+
+
+
+
+
+
+Pignataro, et al.         Expires 30 July 2026                 [Page 12]
+
+Internet-Draft             Characterizing OAM               January 2026
+
+
    The property of "Equal-Forwarding-Treatment" is referred to in
    [RFC9551] as "In-band OAM".  Similarly, the property of "Different-
    Forwarding-Treatment OAM" can be found in the following definition in
@@ -666,12 +695,6 @@ Authors' Addresses
    Old Dog Consulting
    United Kingdom
    Email: adrian@olddog.co.uk
-
-
-
-Pignataro, et al.         Expires 29 July 2026                 [Page 12]
-
-Internet-Draft             Characterizing OAM               January 2026
 
 
    Tal Mizrahi
@@ -702,27 +725,4 @@ Internet-Draft             Characterizing OAM               January 2026
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Pignataro, et al.         Expires 29 July 2026                 [Page 13]
+Pignataro, et al.         Expires 30 July 2026                 [Page 13]
