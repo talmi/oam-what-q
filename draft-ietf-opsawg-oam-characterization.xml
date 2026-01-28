@@ -25,7 +25,7 @@
 <?rfc subcompact="no" ?>
 <?rfc symrefs="yes"?>
 <rfc category="bcp" consensus="true"
-     docName="draft-ietf-opsawg-oam-characterization-16" ipr="trust200902"
+     docName="draft-ietf-opsawg-oam-characterization-17" ipr="trust200902"
      submissionType="IETF" updates="6291">
   <?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
 
@@ -43,7 +43,7 @@
 
   <front>
     <title abbrev="Characterizing OAM">Guidelines for Characterizing
-    "OAM"</title>
+    the Term "OAM"</title>
 
     <author fullname="Carlos Pignataro" initials="C." surname="Pignataro">
       <organization abbrev="Blue Fern Consulting">Blue Fern
@@ -113,8 +113,8 @@
       abbreviation and lays out guidelines for their use in IETF
       documents.</t>
 
-      <t>This document updates RFC 6291 by adding to the
-      guidelines for the use of the term "OAM" with qualifiers. It does not modify any other
+      <t>This document extends RFC 6291 by adding to the
+      guidelines for the use of the term "OAM" with qualifiers. It does not modify any
       part of RFC 6291.</t>
     </abstract>
   </front>
@@ -134,9 +134,9 @@
       abbreviation, and lays out guidelines for their use in future IETF work
       to achieve consistent and unambiguous characterization (<xref target="terms"/>).</t>
 
-     <t>This document focuses on "OAM" qualifiers; not the definition of "OAM" per se.
+     <t>This document focuses on qualifiers for the term "OAM"; not the definition of "OAM" or "OAM protocols".
       Readers should refer to <xref target="RFC6291"/> for an overview of OAM scope. This document does not extend or restrict that scope.
-      Also, readers may refer to the OAM protocol toolset defined in Section 2.2.3. of <xref target="RFC7276"/>.</t>
+      The term "OAM protocols" refers to protocols used for implementing measurement or diagnostic OAM functions as defined in Section 2.2.3. <xref target="RFC7276"/>.</t>
 
      <t>While this document introduces new terminology, it is does not update or change
       the meaning of terminology found in existing RFCs.</t>
@@ -468,13 +468,11 @@
 
 
       <section anchor="Sec-Applicability" title="Applicability and Conformance Statement">
-   <t>The definitions here SHOULD be used by IETF documents referencing OAM. IETF
-   documents that explicitly want to create different definitions for
-   the terms defined here can do so, but unless an alternate definition
-   is provided the definitions of the terms in this document apply.
-   IETF documents that have a requirement for different definitions are
-   encouraged, for clarity's sake, to find terms different than the ones
-   defined here. See also <xref target="RecSec"/>.</t>
+   <t>The definitions here SHOULD be used by IETF documents qualifying the term "OAM". IETF
+   documents that explicitly want to create different characterizations beyond the definitions 
+   of the terms in this document, can introduce such terms provided they are different
+   from the ones defined in this document for clarity's sake.
+   See also <xref target="RecSec"/>.</t>
 
    <t>Authors who follow the terms as defined in this document SHOULD incorporate
    the following in the document (typically in the terminology section):</t>
