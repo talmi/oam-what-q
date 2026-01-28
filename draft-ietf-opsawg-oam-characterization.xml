@@ -136,7 +136,7 @@
 
      <t>This document focuses on qualifiers for the term "OAM"; not the definition of "OAM" or "OAM protocols".
       Readers should refer to <xref target="RFC6291"/> for an overview of OAM scope. This document does not extend or restrict that scope.
-      The term "OAM protocols" refers to protocols used for implementing measurement or diagnostic OAM functions as defined in Section 2.2.3. <xref target="RFC7276"/>.</t>
+      The term "OAM protocols" refers to protocols used for implementing measurement or diagnostic OAM functions as defined in Section 2.2.3 of <xref target="RFC7276"/>.</t>
 
      <t>While this document introduces new terminology, it is does not update or change
       the meaning of terminology found in existing RFCs.</t>
