@@ -127,7 +127,7 @@ Internet-Draft             Characterizing OAM               January 2026
    [RFC6291] for an overview of OAM scope.  This document does not
    extend or restrict that scope.  The term "OAM protocols" refers to
    protocols used for implementing measurement or diagnostic OAM
-   functions as defined in Section 2.2.3.  [RFC7276].
+   functions as defined in Section 2.2.3 of [RFC7276].
 
    While this document introduces new terminology, it is does not update
    or change the meaning of terminology found in existing RFCs.
